@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+<!--Get your own code at fontawesome.com-->
+    <style>
+    .center {
+                margin: center;
+                width: center;
+                border: 3px solid #73AD21;
+                padding: 10px;
+            }
+        body {
+            color: blue;
+        }
+
+        h1 {
+             color: blue;
+             text-align: center;
+            }
+        table, th, td {
+                border: 0px solid black;
+        }
+        
+        #customers {
+                    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+                    border-collapse: collapse;
+                    width: 100%;
+}
+
+        #customers td, #customers th {
+                    border: 1px solid #ddd;
+                    padding: 8px;
+}
+
+        #customers tr:nth-child(even){background-color: #f2f2f2;}
+
+        #customers tr:hover {background-color: #ddd;}
+
+        #customers th {
+                        padding-top: 12px;
+                        padding-bottom: 12px;
+                        text-align: center;
+                        background-color: blue;
+                        color: white;
+}
+    </style>
+    <title>Bem vindo ao Arbitriun</title>
+    <meta charset="utf-8">
+
+  </head>
+   <body>
+    <script> 
+    function soma() 
+    {form.total1.value = (form.campo1.value*1) + (form.campo2.value*1)
+    }
+    function somaA() 
+    {form.total2.value = (form.campo1a.value*1) + (form.campo2a.value*1)
+    }
+    function somaB() 
+    {form.total3.value = (form.campo1b.value*1) + (form.campo2b.value*1)
+    }
+    function somaC() 
+    {form.total4.value = (form.campo1c.value*1) + (form.campo2c.value*1)
+    }
+    function somaD() 
+    {form.total5.value = (form.campo1d.value*1) + (form.campo2d.value*1)
+    }
+    function somaE() 
+    {form.total6.value = (form.campo1e.value*1) + (form.campo2e.value*1)
+    }
+    </script>
+    
+    
+    
+<form name="form">
+<table id="customers">
+            <tr>
+                <th> Preferencias</th>
+                <th> Escolha Um  </th>
+                <th> Escolha Dois</th>
+                <th> Botao       </th>
+                <th> Resultado  </th>
+            </tr>
+
+<tr>
+    <td>
+        <input type="text" name="DigitarPrefencia0" value="Preferencia" />
+    </td>
+    <td>
+       <input name="campo1"><br>    
+    </td>    
+     <td>
+       <input name="campo2"><br>     
+     </td>
+     <td>
+        <input type="button" onclick="soma()" value="Soma" id="customers"> 
+     </td>
+     <td>
+         <input name="total1" readonly>
+     </td>
+</tr>
+
+<!--
+SomaA
+-->
+<tr>
+    <td>
+        <input type="text" name="DigitarPrefencia0" value="Preferencia" />
+    </td>
+    <td>
+       <input name="campo1a"><br>    
+    </td>    
+     <td>
+       <input name="campo2a"><br>     
+     </td>
+     <td>
+        <input type="button" onclick="somaA()" value="Soma" id="customers"> 
+     </td>
+     <td>
+         <input name="total2" readonly>
+     </td>
+</tr>
+
+<!--
+SomaB
+-->
+<tr>
+    <td>
+        <input type="text" name="DigitarPrefencia0" value="Preferencia" />
+    </td>
+    <td>
+       <input name="campo1b"><br>    
+    </td>    
+     <td>
+       <input name="campo2b"><br>     
+     </td>
+     <td>
+        <input type="button" onclick="somaB()" value="Soma" id="customers"> 
+     </td>
+     <td>
+         <input name="total3" readonly>
+     </td>
+</tr>
+<!--
+SomaC
+-->
+<tr>
+    <td>
+        <input type="text" name="DigitarPrefencia0" value="Preferencia" />
+    </td>
+    <td>
+       <input name="campo1c"><br>    
+    </td>    
+     <td>
+       <input name="campo2c"><br>     
+     </td>
+     <td>
+        <input type="button" onclick="somaC()" value="Soma" id="customers"> 
+     </td>
+     <td>
+         <input name="total4" readonly>
+     </td>
+</tr>
+<!--
+SomaD
+-->
+<tr>
+    <td>
+        <input type="text" name="DigitarPrefencia0" value="Preferencia" />
+    </td>
+    <td>
+       <input name="campo1d"><br>    
+    </td>    
+     <td>
+       <input name="campo2d"><br>     
+     </td>
+     <td>
+        <input type="button" onclick="somaD()" value="Soma" id="customers"> 
+     </td>
+     <td>
+         <input name="total5" readonly>
+     </td>
+</tr>
+<!--
+SomaE
+-->
+<tr>
+    <td>
+        <input type="text" name="DigitarPrefencia0" value="Preferencia"/>
+    </td>
+    <td>
+       <input name="campo1e"><br>    
+    </td>    
+     <td>
+       <input name="campo2e"><br>     
+     </td>
+     <td>
+        <input type="button" onclick="somaE()" value="Soma" id="customers"> 
+     </td>
+     <td>
+         <input name="total6" readonly>
+     </td>
+</tr>
+</table>
+</form>
+</body>
+</html>
